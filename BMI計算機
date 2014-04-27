@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(void)
+{
+  double height,weight,BMI;
+  printf("shintyou[ m]");
+  scanf("%lf",&height);
+  printf("taisyuu[kg]");
+  scanf("%lf",&weight);
+  BMI=weight/height/height
+  printf("BMI ha %f desu \n",BMI);
+  if(BMI>=25){
+    printf("himan desu \n");
+  }else if(BMI<18.5){
+    printf("teitaisyuu desu \n");
+  }else{
+    printf("hyousyun desu \n");
+  }
+  return 0;
+  }
