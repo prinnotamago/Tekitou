@@ -6,7 +6,7 @@ int main(void)
   scanf("%lf",&height);
   printf("taisyuu[kg]");
   scanf("%lf",&weight);
-  BMI=weight/height/height
+  BMI=weight/height/height;
   printf("BMI ha %f desu \n",BMI);
   if(BMI>=25){
     printf("himan desu \n");
