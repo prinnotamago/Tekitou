@@ -20,11 +20,16 @@ int col;
 for(col = 0; col < 255; col+=10){
  fill(col,0,0);
 } 
-for( i = 0; i < 500; i++){
- line(i,30,i,15);
+for( t = 10; t < 90; t++){
+ ellipse(t,10,10,25);
 } 
-for( t = 15; t < 85; t++){
- line(t,0,t,20);
+fill(0,0,0);
+ellipse(90,10,10,25);
+for(col = 0; col < 255; col+=10){
+ fill(col,0,0);
+} 
+for( i = 0; i < 500; i++){
+ ellipse(i,20,i,15);
 } 
 
 
