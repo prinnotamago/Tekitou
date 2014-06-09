@@ -1,17 +1,24 @@
+float pika;
+float pika2;
+void setup(){
+  size(100,100);
+}
+void draw(){
+fill(255,255,255);
 ellipse(50,50,100,100);
 fill(255,255,255);
 ellipse(30,40,20,20);
 ellipse(70,40,20,20);
 fill(0,0,0);
-ellipse(30,40,10,20);
-ellipse(70,40,10,20);
+ellipse(30,40,pika,20);
+ellipse(70,40,pika,20);
 line(30,70,50,80);
 line(50,80,70,70);
 line(40,75,30,80);
 line(30,80,30,70);
 line(60,75,70,80);
 line(70,80,70,70);
-fill(255,0,0);
+fill(pika2,0,0);
 ellipse(50,50,15,15);
 fill(0,0,0);
 int i;
@@ -31,5 +38,13 @@ for(col = 0; col < 255; col+=10){
 for( i = 0; i < 500; i++){
  ellipse(i,20,i,15);
 } 
-
+pika+=1;
+if(pika >= 20){
+pika = 0;
+}
+pika2+=10;
+if(pika2 >= 255){
+pika2 = 0;
+}
+}
 
